@@ -2,7 +2,6 @@ backend:
   name: github
   repo: sheronimo/snh48-lore
   branch: main
-  base_url: https://api.netlify.com
 
 media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'
