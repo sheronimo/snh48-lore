@@ -5,41 +5,72 @@ theme = "hugo-theme-stack"
 defaultContentLanguage = "en"
 
 [params]
-  subtitle = "Trying to make sense of the SNH48 Hybrid Universe lore"
-  mainSections = ["posts"]
-  featuredImageField = "cover"
-  toc = true
-  defaultTheme = "auto"
+mainSections = [ "posts" ]
+featuredImageField = "image"
+rssFullContent = true
 
-  [params.search]
-    enable = true
+  [params.footer]
+
+  [params.dateFormat]
+  published = "Jan 02"
+  lastUpdated = "Jan 02"
 
   [params.sidebar]
-    enable = true
+  compact = false
+  subtitle = "Aiming to make sense of the stage lore, one post at a time"
+
+    [params.sidebar.avatar]
+    enabled = true
+    local = true
+    src = "img/logo.png"
+
+  [params.article]
+  headingAnchor = false
+  toc = true
+  readingTime = false
+
+    [params.article.license]
+    enabled = false
+
+  [params.comments]
+  enabled = false
+
+  [[params.widgets.homepage]]
+    type = "search"
+
+  [[params.widgets.homepage]]
+    type = "categories"
+    [params.widgets.homepage.params]
+      limit = 10
+
+  [[params.widgets.homepage]]
+    type = "tag-cloud"
+    [params.widgets.homepage.params]
+      limit = 10
+
+  [[params.widgets.page]]
+    type = "search"
+
+  [[params.widgets.page]]
+    type = "categories"
+    [params.widgets.page.params]
+      limit = 10
+
+  [[params.widgets.page]]
+    type = "tag-cloud"
+    [params.widgets.page.params]
+      limit = 10
+
+[menu]
+  [[menu.social]]
+    name = "Twitter"
+    url = "https://twitter.com/shushuwuwu"
+	weight = 1
+	[menu.social.params]
+	  icon = "brand-twitter"
+	  newTab = true
 
 [taxonomies]
   tag = "tags"
   category = "categories"
   team = "teams"
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-[menu]
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 1
-
-  [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories/"
-    weight = 2
-
-  [[menu.main]]
-    identifier = "teams"
-    name = "Teams"
-    url = "/teams/"
-    weight = 3
