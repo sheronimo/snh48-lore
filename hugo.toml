@@ -1,0 +1,25 @@
+baseURL = "http://localhost/"
+languageCode = "en-us"
+title = "SNH48 Stage Universe Lore"
+theme = "PaperMod"
+defaultContentLanguage = "en"
+
+[pagination]
+  disableAliases = false
+  pagerSize = 10
+  path = 'page'
+
+[params]
+  author = "shu"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  team = "teams"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
