@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: sheronimo/snh48-lore
   branch: master
 
 media_folder: 'static/images/uploads'
