@@ -1,3 +1,5 @@
+import dotenv from 'dotenv'
+dotenv.config({ path: '.env.production' })
 import { defineConfig } from 'tinacms'
 
 // Your hosting provider likely exposes this as an environment variable
