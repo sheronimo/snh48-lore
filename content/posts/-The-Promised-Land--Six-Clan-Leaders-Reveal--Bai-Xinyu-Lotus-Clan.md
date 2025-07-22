@@ -6,7 +6,7 @@ categories:
   - 应许之地 (The Promised Land)
 teams:
   - Team NII
-image: /images/002VZWIBgy1hf036jqueej618g1unhdu02.jpg
+image: ''
 ---
 
 【Lotus Clan】
