@@ -2,6 +2,10 @@ import dotenv from 'dotenv'
 dotenv.config({ path: '.env.production' })
 import { defineConfig } from 'tinacms'
 
+if (typeof window === 'undefined') {
+	require('dotenv').config({ path: '.env.production' })
+}
+
 // Your hosting provider likely exposes this as an environment variable
 const branch =
 	process.env.GITHUB_BRANCH ||
