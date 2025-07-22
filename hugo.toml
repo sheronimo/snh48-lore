@@ -1,20 +1,21 @@
-baseURL = "http://localhost/"
+baseURL = "https://snh48-lore.pages.dev/"
 languageCode = "en-us"
-title = "SNH48 Stage Universe Lore"
-theme = "PaperMod"
+title = "SNH48 Hybrid Universe"
+theme = "hugo-theme-stack"
 defaultContentLanguage = "en"
 
-[pagination]
-  disableAliases = false
-  pagerSize = 10
-  path = 'page'
-
 [params]
-  author = "shu"
+  subtitle = "Trying to make sense of the SNH48 Hybrid Universe lore"
+  mainSections = ["posts"]
+  featuredImageField = "cover"
+  toc = true
   defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
+
+  [params.search]
+    enable = true
+
+  [params.sidebar]
+    enable = true
 
 [taxonomies]
   tag = "tags"
@@ -23,3 +24,22 @@ defaultContentLanguage = "en"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[menu]
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "teams"
+    name = "Teams"
+    url = "/teams/"
+    weight = 3
