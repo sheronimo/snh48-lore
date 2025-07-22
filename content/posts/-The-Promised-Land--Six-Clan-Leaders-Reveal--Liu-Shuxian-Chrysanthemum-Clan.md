@@ -8,7 +8,7 @@ categories:
   - 应许之地 (The Promised Land)
 teams:
   - Team NII
-image: /images/002VZWIBgy1hf4hpezqqzj618g1une8202.jpg
+image: ''
 ---
 
 【Chrysanthemum Clan】
