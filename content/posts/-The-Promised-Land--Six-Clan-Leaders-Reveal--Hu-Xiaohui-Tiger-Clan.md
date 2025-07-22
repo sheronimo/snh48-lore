@@ -1,5 +1,6 @@
 ---
 title: 应许之地 (The Promised Land) — Six Clan Leaders Reveal — Hu Xiaohui (Tiger Clan)
+date: 2025-07-21T17:00:00.000Z
 tags:
   - character
 categories:
